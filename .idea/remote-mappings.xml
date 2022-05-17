@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@4eeba97e-d39d-4a8c-87e6-3c749dacd70c" />
+        <remote-mappings server-id="python@sftp://brendan@10.19.83.5:22/home/brendan/speech_test/myvenv/bin/python3">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/home/brendan/speech_test" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>

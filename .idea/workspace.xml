@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="be1343de-cd3b-42e6-8c19-1b6569748dc5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="29I7G9DKMeuGOLqSS7VO7M6lWA7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kane\Desktop\!PYTHON\speech_pi" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kane\Desktop\!PYTHON\speech_pi" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="speech_pi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be1343de-cd3b-42e6-8c19-1b6569748dc5" name="Default Changelist" comment="" />
+      <created>1652788647944</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652788647944</updated>
+      <workItem from="1652788653668" duration="6433000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2449" y="169" key="#Deployment" timestamp="1652797175735">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2449" y="169" key="#Deployment/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652797175735" />
+    <state x="2312" y="167" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1652796013387">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2312" y="167" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652796013387" />
+    <state x="2438" y="306" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1652789370261">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2438" y="306" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652789370261" />
+    <state x="2081" y="138" width="1554" height="746" key="DirDiffDialog" timestamp="1652796902446">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2081" y="138" width="1554" height="746" key="DirDiffDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652796902446" />
+    <state x="2637" y="266" key="FileChooserDialogImpl" timestamp="1652796271696">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2637" y="266" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652796271696" />
+    <state width="1694" height="245" key="GridCell.Tab.0.bottom" timestamp="1652797528752">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1694" height="244" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1652788878194" />
+    <state width="1694" height="245" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652797528752" />
+    <state width="1694" height="245" key="GridCell.Tab.0.center" timestamp="1652797528752">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1694" height="244" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1652788878194" />
+    <state width="1694" height="245" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652797528752" />
+    <state width="1694" height="245" key="GridCell.Tab.0.left" timestamp="1652797528752">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1694" height="244" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1652788878194" />
+    <state width="1694" height="245" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652797528752" />
+    <state width="1694" height="245" key="GridCell.Tab.0.right" timestamp="1652797528752">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1694" height="244" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1652788878194" />
+    <state width="1694" height="245" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652797528752" />
+    <state x="2359" y="154" key="SettingsEditor" timestamp="1652797450156">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2359" y="154" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652797450156" />
+    <state x="2599" y="242" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1652796272682">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2599" y="242" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652796272682" />
+    <state x="2754" y="242" key="ftp.server.browser" timestamp="1652797446573">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2754" y="242" key="ftp.server.browser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1652797446573" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/speech_pi$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1652797528743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
