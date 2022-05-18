@@ -4,11 +4,18 @@ import speech_recognition as sr
 import time
 from gtts import gTTS
 import os
+import requests
+import json
 
 # GPIO.setwarnings(False)
 path = os.path.dirname(os.path.realpath(__file__))
 os.chdir(path)
 
+api_key = "YOUR_API_KEY_HERE"
+lon = "-82.5154"
+lat = "40.7584"
+weaher_url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}&units=imperial"
+weaher_url_forcast = f"https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={api_key}&units=imperial"
 
 language = 'en'
 tld = 'com'
@@ -27,6 +34,18 @@ recognizer = sr.Recognizer()
 # mic = sr.Microphone()
 # print(sr.Microphone.list_microphone_names())
 mic = sr.Microphone(device_index=1)
+
+
+def get_weather():
+	response = requests.get(weaher_url).json()
+	# print(json.dumps(response, indent=4))
+	current = response['main']['temp']
+	city = response['name']
+	description = response['weather'][0]['description']
+	mytext = f"Currently in {city}, it is {current} degrees and {description}"
+	myobj = gTTS(text=mytext, lang=language, slow=False, tld=tld)
+	myobj.save(path + "/tts.mp3")
+	os.system(f"mpg321 {path}/tts.mp3")
 
 
 def some_cool_thing(words):
@@ -75,6 +94,10 @@ def some_cool_thing(words):
 		myobj.save(path + "/tts.mp3")
 		os.system(f"mpg321 {path}/tts.mp3")
 		print(words)
+
+	elif words == "what is the weather" or words in "what is the weather":
+		get_weather()
+
 
 
 print()
