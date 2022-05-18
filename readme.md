@@ -4,3 +4,5 @@
 - sudo apt-get install python3-pyaudio
 - sudo apt-get install flac
 - pip3 install RPi.GPIO
+
+- https://thepihut.com/blogs/raspberry-pi-tutorials/using-ifttt-with-the-raspberry-pi

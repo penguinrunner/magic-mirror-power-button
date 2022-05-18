@@ -1,7 +1,21 @@
 import speech_recognition as sr
-from playsound import playsound
+# from playsound import playsound
 import RPi.GPIO as GPIO
 import time
+from gtts import gTTS
+import os
+
+GPIO.setwarnings(False)
+path = os.path.dirname(os.path.realpath(__file__))
+os.chdir(path)
+
+
+language = 'en'
+tld = 'com'
+# tld = 'co.uk'
+# tld = 'com.au'
+# tld = 'ie'
+
 
 power_button = 17
 GPIO.setmode(GPIO.BCM)
@@ -19,20 +33,60 @@ def some_cool_thing(words):
 	words = words.lower()
 	if words == "magic mirror turn on":
 		print("Turning On Magic Mirror!")
+
+		mytext = 'Turning on your Mirror!'
+		myobj = gTTS(text=mytext, lang=language, slow=False,tld=tld)
+		myobj.save(path + "/tts.mp3")
+		os.system(f"mpg321 {path}/tts.mp3")
+
 		GPIO.output(power_button, GPIO.HIGH)
 		time.sleep(1)
 		GPIO.output(power_button, GPIO.LOW)
 	elif words == "magic mirror turn off":
 		print("Turning Off Magic Mirror!")
+
+		mytext = 'Turning off your Mirror!'
+		myobj = gTTS(text=mytext, lang=language, slow=False,tld=tld)
+		myobj.save(path + "/tts.mp3")
+		os.system(f"mpg321 {path}/tts.mp3")
+
 		GPIO.output(power_button, GPIO.HIGH)
 		time.sleep(1)
 		GPIO.output(power_button, GPIO.LOW)
-	elif words == "i love the beach" or words in "i love the beach":
-		print(words)
-		playsound('steppin.mp3')
 
+	elif words == "i love the beach" or words in "i love the beach":
+		mytext = 'Well, you asked for it!'
+		myobj = gTTS(text=mytext, lang=language, slow=False,tld=tld)
+		myobj.save(path + "/tts.mp3")
+		os.system(f"mpg321 {path}/tts.mp3")
+		os.system(f"mpg321 {path}/steppin.mp3")
+		print(words)
+
+	elif words == "what is the meaning of life" or words in "what is the meaning of life":
+		mytext = 'The meaning of life is. forty two'
+		myobj = gTTS(text=mytext, lang=language, slow=False,tld=tld)
+		myobj.save(path + "/tts.mp3")
+		os.system(f"mpg321 {path}/tts.mp3")
+		print(words)
+
+	elif words == "what is love" or words in "what is love":
+		mytext = "Baby don't hurt me. don't hurt me. No more."
+		myobj = gTTS(text=mytext, lang=language, slow=False,tld=tld)
+		myobj.save(path + "/tts.mp3")
+		os.system(f"mpg321 {path}/tts.mp3")
+		print(words)
+
+
+print()
+print()
+print()
+mytext = 'Magic Mirror is Ready!'
+myobj = gTTS(text=mytext, lang=language, slow=False,tld=tld)
+myobj.save(path+"/tts.mp3")
+os.system(f"mpg321 {path}/tts.mp3")
 
 while True:
+
 	print("Waiting for Speech...")
 
 	with mic as source:
