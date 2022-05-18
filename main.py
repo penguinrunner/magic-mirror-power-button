@@ -1,11 +1,11 @@
 import speech_recognition as sr
 # from playsound import playsound
-# import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 import time
 from gtts import gTTS
 import os
 
-# GPIO.setwarnings(False)
+GPIO.setwarnings(False)
 path = os.path.dirname(os.path.realpath(__file__))
 os.chdir(path)
 
@@ -18,9 +18,9 @@ tld = 'com'
 
 
 power_button = 17
-# GPIO.setmode(GPIO.BCM)
-# GPIO.setup(power_button, GPIO.OUT)
-# GPIO.output(power_button, GPIO.LOW)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(power_button, GPIO.OUT)
+GPIO.output(power_button, GPIO.LOW)
 
 print(sr.__version__)
 recognizer = sr.Recognizer()
@@ -39,9 +39,9 @@ def some_cool_thing(words):
 		myobj.save(path + "/tts.mp3")
 		os.system(f"mpg321 {path}/tts.mp3")
 
-		# GPIO.output(power_button, GPIO.HIGH)
-		# time.sleep(1)
-		# GPIO.output(power_button, GPIO.LOW)
+		GPIO.output(power_button, GPIO.HIGH)
+		time.sleep(1)
+		GPIO.output(power_button, GPIO.LOW)
 	elif words == "magic mirror turn off":
 		print("Turning Off Magic Mirror!")
 
@@ -50,9 +50,9 @@ def some_cool_thing(words):
 		myobj.save(path + "/tts.mp3")
 		os.system(f"mpg321 {path}/tts.mp3")
 
-		# GPIO.output(power_button, GPIO.HIGH)
-		# time.sleep(1)
-		# GPIO.output(power_button, GPIO.LOW)
+		GPIO.output(power_button, GPIO.HIGH)
+		time.sleep(1)
+		GPIO.output(power_button, GPIO.LOW)
 
 	elif words == "i love the beach" or words in "i love the beach":
 		mytext = 'Well, you asked for it!'
