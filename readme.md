@@ -46,7 +46,7 @@ WantedBy=multi-user.target
 
 
 #
-###Other Helpful Commands (Optional)
+### Other Helpful Commands (Optional)
 ##### Start, Stop, Restart, Kill, ...etc
 - `sudo systemctl stop magic-mirror-power-button.service`          #To stop running service 
 - `sudo systemctl start magic-mirror-power-button.service`         #To start running service 
