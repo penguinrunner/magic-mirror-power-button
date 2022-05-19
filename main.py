@@ -11,7 +11,7 @@ GPIO.setwarnings(False)
 path = os.path.dirname(os.path.realpath(__file__))
 os.chdir(path)
 
-api_key = "e20448cb38d0c4030e48e39c15bcb314"
+api_key = "YOUR_API_KEY_HERE"
 lon = "-82.5154"
 lat = "40.7584"
 weaher_url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}&units=imperial"
