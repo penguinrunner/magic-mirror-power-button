@@ -6,12 +6,13 @@ from gtts import gTTS
 import os
 import requests
 import json
+import datetime
 
 GPIO.setwarnings(False)
 path = os.path.dirname(os.path.realpath(__file__))
 os.chdir(path)
 
-api_key = "YOUR_API_KEY_HERE"
+api_key = "YOUR_API_KEY"
 lon = "-82.5154"
 lat = "40.7584"
 weaher_url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}&units=imperial"
@@ -44,6 +45,70 @@ def get_weather():
 	myobj = gTTS(text=mytext, lang=language, slow=False, tld=tld)
 	myobj.save(path + "/tts.mp3")
 	os.system(f"mpg321 {path}/tts.mp3")
+
+
+def get_weather_forcast():
+	response = requests.get(weaher_url_forcast).json()
+	print(json.dumps(response, indent=4))
+	with open('forcast.json','w+') as outfile:
+		json.dump(response,outfile,indent=4)
+
+	with open('forcast.json','r') as infile:
+		data = json.load(infile)
+
+	all_days = {}
+	forcast_data = {}
+	for each_date in data['list']:
+		this_date = each_date['dt']
+		millseconds = this_date
+		this_date = datetime.datetime.fromtimestamp(millseconds)
+
+		if not this_date.date() in all_days:
+			all_days[this_date.date()] = [each_date]
+		else:
+			these_days = all_days[this_date.date()]
+			these_days.append(each_date)
+			all_days[this_date.date()] = these_days
+
+
+		for each_date in all_days:
+			max_temp = -50
+			min_temp = 100
+			descriptions = {}
+			# print('**',each_date)
+
+			for each_forcast in all_days[each_date]:
+				# print(each_forcast)
+				if float(each_forcast['main']['temp_max']) > max_temp:
+					max_temp = float(each_forcast['main']['temp'])
+
+				if float(each_forcast['main']['temp_min']) < min_temp:
+					min_temp = float(each_forcast['main']['temp'])
+
+			print(f"Max temp for {each_date} is {max_temp} and the min is {min_temp}")
+## new
+			forcast_data[each_date] = {'high':max_temp,'low':min_temp}
+		print(forcast_data)
+
+		text=""
+		i = 0
+		for each_date in forcast_data:
+			if i == 0:
+				this_day = "today"
+			elif i == 1:
+				this_day = "tomorrow"
+			else:
+				break
+			i+=1
+
+			text = text + f"The high for {this_day} will be {forcast_data[each_date]['high']}, and the low will be {forcast_data[each_date]['low']}. "
+		print(text)
+
+	myobj = gTTS(text=text, lang=language, slow=False, tld=tld)
+	myobj.save(path + "/tts.mp3")
+	os.system(f"mpg321 {path}/tts.mp3")
+
+
 
 
 def some_cool_thing(words):
@@ -96,6 +161,12 @@ def some_cool_thing(words):
 	elif words == "what is the weather" or words in "what is the weather":
 		get_weather()
 
+	elif words == "what is the forecast" or words in "what is the forecast":
+		get_weather()
+		get_weather_forcast()
+
+
+# get_weather_forcast()
 
 print()
 print()
